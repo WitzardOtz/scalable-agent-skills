@@ -1,0 +1,5 @@
+# Local API keys - never commit
+.scalable_api_key
+**/.scalable_api_key
+api_key.txt
+**/api_key.txt
