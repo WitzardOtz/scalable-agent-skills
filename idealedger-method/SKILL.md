@@ -107,7 +107,7 @@ riconoscendo abbastanza?"* Log in `00_friction_log.md`; adapt routing; stickers
 
 Per-tool playbooks in **`references/tools.md`** (read the section before running a tool);
 templates in `assets/templates/`; sticker/gate catalog in `references/stickers.md`.
-**Add-on Scalable** (opzionale, a pagamento): comparabili su ~2005 startup europee —
+**Add-on Scalable** (opzionale, gratuito in fase di lancio): comparabili su oltre 2.000 startup europee —
 `references/scalable_intelligence.md` + `assets/scalable_intel/api_client.py` (tools 6, 7,
 9, 15); senza chiave prosegui col ragionamento generico e segnalalo. **Lente del VC**
 (power-law, fund-returner test, 4 rischi, 5 T): `references/vc_lens.md` (tools 6, 14, 15).
