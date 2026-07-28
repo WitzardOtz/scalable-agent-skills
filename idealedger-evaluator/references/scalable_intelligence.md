@@ -1,6 +1,6 @@
 # Scalable Intelligence — comparabili & benchmark reali (add-on API, modalità EVALUATOR)
 
-Add-on **opzionale a pagamento**: catalogo reale di ~2005 startup europee (dataset Scalable)
+Add-on **opzionale, gratuito in fase di lancio**: catalogo reale di oltre 2.000 startup europee (dataset Scalable)
 per sanity-check esterno su sizing, concorrenza, benchmark di round e replicabilità.
 
 > **Graceful degradation — leggi prima.** È un add-on. Se la API key non è configurata o
