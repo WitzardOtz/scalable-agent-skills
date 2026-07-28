@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-api_client.py — client del Scalable Intelligence API (add-on a pagamento).
+api_client.py — client del Scalable Intelligence API (add-on gratuito in fase di lancio).
 
 Stessa interfaccia di prima (comps / bench / find / sectors), ma invece di leggere
 un dataset locale CHIAMA L'API remota usando una API key.
