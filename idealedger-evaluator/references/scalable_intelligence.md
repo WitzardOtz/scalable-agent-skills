@@ -12,7 +12,7 @@ per sanity-check esterno su sizing, concorrenza, benchmark di round e replicabil
 
 Se l'utente chiede del premium, di "attivare la chiave", o incolla una chiave in chat:
 
-1. **Non ha ancora la chiave** → indirizzalo a https://www.scalablepod.it/ClaudeSkill/
+1. **Non ha ancora la chiave** → indirizzalo a https://www.scalablepod.it/scalable-intelligence/
    (pagina "Attiva la chiave"): inserisce l'email e riceve subito la chiave.
 2. **Incolla la chiave in chat** → salvala TU, subito, secondo l'ambiente in cui giri:
    - Se puoi impostare variabili d'ambiente persistenti (Codex CLI, Antigravity, shell
