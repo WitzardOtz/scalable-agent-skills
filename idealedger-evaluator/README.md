@@ -38,7 +38,7 @@ A structured **Risk Diagnosis** covering:
 - Key questions to ask the founder
 - A clear signal: *worth a call / not yet / pass*
 
-Output is saved as a local markdown file. No data is uploaded anywhere.
+Output is saved as a local markdown file; your inputs stay on your machine. (The optional Scalable Intelligence add-on sends only sector/geography filters to the API — never your deck or the startup's private materials.)
 
 ---
 
@@ -78,16 +78,16 @@ The skill asks clarifying questions one at a time, then produces the diagnosis.
 Copy this folder into your workspace's `.agents/skills/` directory.
 ---
 
-## Premium — Scalable Intelligence add-on (optional)
+## Scalable Intelligence add-on (optional — free during launch)
 
-The base skill is complete and free. The **premium add-on** connects it to the Scalable
-Intelligence database: real comparables and benchmarks from ~2,005 mapped European startups,
+The base skill is complete and free. The **Scalable Intelligence add-on** (also free during launch) connects it to the Scalable
+Intelligence database: real comparables and benchmarks from 2,000+ mapped European startups,
 used by the PMF, market-sizing, competition, GTM, and replication-risk tools.
 
 **How to activate — 3 steps:**
 
-1. Get your key at [scalablepod.it/ClaudeSkill](https://www.scalablepod.it/ClaudeSkill/) (enter your email, key issued instantly)
-2. Paste this message in a Claude chat: `Attiva la chiave Scalable: <your-key>`
+1. Get your key at [scalablepod.it/scalable-intelligence](https://www.scalablepod.it/scalable-intelligence/) (enter your email, key issued instantly)
+2. Paste this message in your agent chat (Claude, Codex, or Antigravity): `Attiva la chiave Scalable: <your-key>`
 3. Done — the skill saves the key on your machine and reuses it in future sessions
 
 Without a key the skill simply proceeds with generic reasoning — nothing breaks.
