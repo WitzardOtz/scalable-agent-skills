@@ -103,7 +103,7 @@ Economics → sostenibile o scala le perdite? · 13 Fasi → in che fase è DAVV
 narrativa coerente con evidenze/fase? · 15 Fundraising → ask coerente con milestone?
 
 Full per-tool playbook in **`references/tools_evaluator.md`** (read the section before
-using a tool). **Add-on Scalable** (opzionale, a pagamento): comparabili reali —
+using a tool). **Add-on Scalable** (opzionale, gratuito in fase di lancio): comparabili reali —
 `references/scalable_intelligence.md` + `assets/scalable_intel/api_client.py` (tools 4, 6,
 7, 8b, 9); senza chiave prosegui col ragionamento generico. **Lente del VC** (fund-math,
 power-law, 4 rischi, 5 T, "valuation = belief"): `references/vc_lens.md` (tools 4, 6-9).
