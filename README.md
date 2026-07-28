@@ -46,21 +46,21 @@ The two startup skills are built on **IdeaLedger**, a validation method develope
 
 > *"Is this startup solving a real problem — for real people — with the right team and capability?"*
 
-The method runs across 5 phases and 15 diagnostic tools, from idea clarification to fundraising readiness. The skills are the **light, local version**: no account, no backend, all output files stay on your machine. An optional premium add-on (below) connects the two IdeaLedger skills to real startup data.
+The method runs across 5 phases and 15 diagnostic tools, from idea clarification to fundraising readiness. The skills are the **light, local version**: no account, no backend, all output files stay on your machine. An optional Scalable Intelligence add-on (below), free during launch, connects the two IdeaLedger skills to real startup data — it sends only sector/geography filters, never your files.
 
 More at [scalablepod.it/learn](https://www.scalablepod.it/learn/)
 
 ---
 
-## Free vs Premium (IdeaLedger skills only)
+## Base vs Scalable Intelligence add-on (IdeaLedger skills only)
 
-| | Free (this repo) | Premium add-on |
+| | Base (this repo) | + Scalable Intelligence (free during launch) |
 |---|---|---|
 | Full method, all tools | ✅ | ✅ |
 | Local markdown dossier | ✅ | ✅ |
 | Real comparables & benchmarks (2,000+ EU startups) | — | ✅ |
 
-**Premium in 3 steps:** get a key at [scalablepod.it/scalable-intelligence](https://www.scalablepod.it/scalable-intelligence/) → paste `Attiva la chiave Scalable: <your-key>` in a Claude chat → the skill saves and reuses it automatically. No key? Everything still works with generic reasoning.
+**Add-on in 3 steps (free during launch):** get a key at [scalablepod.it/scalable-intelligence](https://www.scalablepod.it/scalable-intelligence/) → paste `Attiva la chiave Scalable: <your-key>` in your agent chat (Claude, Codex, Antigravity) → the skill saves and reuses it automatically. No key? Everything still works with generic reasoning.
 
 ---
 
@@ -74,4 +74,4 @@ I built these while running Scalable — a media project covering European start
 
 ## License
 
-MIT — use freely, attribution appreciated.
+Released under the MIT License — free to use, modify, and distribute, provided the copyright and license notice are kept. See [LICENSE](./LICENSE).
