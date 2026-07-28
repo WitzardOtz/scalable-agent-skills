@@ -46,7 +46,7 @@ Founders and aspiring founders who want to:
 - **Starts with Gate 00**: a diagnostic intake before any tool is applied
 - **One question at a time**: never a questionnaire dump
 - **Saves output locally**: produces markdown files on your machine
-- **No account, no API key, no backend**: fully local and private (optional premium add-on below)
+- **No account, no API key, no backend**: the method runs locally — your output files stay on your machine. An optional Scalable Intelligence add-on (below) pulls real data, sending only sector/geography filters — never your private materials.
 
 ---
 
@@ -76,16 +76,16 @@ The skill activates automatically when you say things like:
 Copy this folder into your workspace's `.agents/skills/` directory.
 ---
 
-## Premium — Scalable Intelligence add-on (optional)
+## Scalable Intelligence add-on (optional — free during launch)
 
-The base skill reasons from general knowledge. The **premium add-on** connects it to the
-Scalable Intelligence database: real comparables and benchmarks from ~2,005 mapped European
+The base skill reasons from general knowledge. The **Scalable Intelligence add-on** (free during launch) connects it to the
+Scalable Intelligence database: real comparables and benchmarks from 2,000+ mapped European
 startups, used by the market-sizing, competition, GTM, and fundraising tools.
 
 **How to activate — 3 steps:**
 
-1. Get your key at [scalablepod.it/ClaudeSkill](https://www.scalablepod.it/ClaudeSkill/) (enter your email, key issued instantly)
-2. Paste this message in a Claude chat: `Attiva la chiave Scalable: <your-key>`
+1. Get your key at [scalablepod.it/scalable-intelligence](https://www.scalablepod.it/scalable-intelligence/) (enter your email, key issued instantly)
+2. Paste this message in your agent chat (Claude, Codex, or Antigravity): `Attiva la chiave Scalable: <your-key>`
 3. Done — the skill saves the key on your machine and reuses it in future sessions
 
 Without a key the skill simply proceeds with generic reasoning — nothing breaks.
