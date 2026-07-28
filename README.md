@@ -58,9 +58,9 @@ More at [scalablepod.it/learn](https://www.scalablepod.it/learn/)
 |---|---|---|
 | Full method, all tools | ✅ | ✅ |
 | Local markdown dossier | ✅ | ✅ |
-| Real comparables & benchmarks (~2,005 EU startups) | — | ✅ |
+| Real comparables & benchmarks (2,000+ EU startups) | — | ✅ |
 
-**Premium in 3 steps:** get a key at [scalablepod.it/ClaudeSkill](https://www.scalablepod.it/ClaudeSkill/) → paste `Attiva la chiave Scalable: <your-key>` in a Claude chat → the skill saves and reuses it automatically. No key? Everything still works with generic reasoning.
+**Premium in 3 steps:** get a key at [scalablepod.it/scalable-intelligence](https://www.scalablepod.it/scalable-intelligence/) → paste `Attiva la chiave Scalable: <your-key>` in a Claude chat → the skill saves and reuses it automatically. No key? Everything still works with generic reasoning.
 
 ---
 
