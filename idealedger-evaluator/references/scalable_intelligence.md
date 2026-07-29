@@ -14,18 +14,33 @@ Se l'utente chiede del premium, di "attivare la chiave", o incolla una chiave in
 
 1. **Non ha ancora la chiave** → indirizzalo a https://www.scalablepod.it/scalable-intelligence/
    (pagina "Attiva la chiave"): inserisce l'email e riceve subito la chiave.
-2. **Incolla la chiave in chat** → salvala TU, subito, secondo l'ambiente in cui giri:
-   - Se puoi impostare variabili d'ambiente persistenti (Codex CLI, Antigravity, shell
-     locale dell'utente): imposta `SCALABLE_API_KEY`.
-   - In ogni caso salva anche `~/.scalable_api_key` (solo la stringa della chiave) — è il
-     fallback che `api_client.py` legge ovunque.
-   - Se l'ambiente è sandboxed e la home non persiste tra sessioni (es. Claude Cowork):
-     salva una copia in `.scalable_api_key` nella cartella di lavoro/dossier dell'utente
-     e, a inizio sessione, se `~/.scalable_api_key` manca ma la copia nel workspace esiste,
-     ripristinala senza chiedere nulla.
-3. **Verifica subito** con una chiamata reale (es. `bench --sub payments`): se
-   `available: true` conferma "chiave attiva ✓"; altrimenti riporta `reason` all'utente.
-4. **Riservatezza**: non ripetere mai la chiave in chat, nei file di output o nei report.
+2. **Incolla la chiave in chat** → salvala TU, subito, SENZA mostrarla. Usa l'helper `save-key`
+   di `api_client.py`: scrive il file con permessi `600` (dove supportato) e non stampa mai la
+   chiave. Passa la chiave via stdin (o `SCALABLE_API_KEY`), MAI come argomento da riga di comando
+   (finirebbe nella cronologia/argv):
+
+   - **Home persistente** (Codex CLI, Antigravity, shell locale) — posizione preferita:
+     ```bash
+     printf %s "<CHIAVE>" | python assets/scalable_intel/api_client.py save-key --scope home
+     ```
+     Se puoi, esporta anche `SCALABLE_API_KEY` per la sessione corrente.
+
+   - **Sandbox / home non persistente** (es. Claude Cowork) — fallback nel workspace:
+     ```bash
+     printf %s "<CHIAVE>" | python assets/scalable_intel/api_client.py save-key --scope workspace --workspace <cartella-dossier>
+     ```
+     `save-key` salva `.scalable_api_key` nel workspace e aggiorna in modo IDEMPOTENTE il
+     `.gitignore` di quella cartella (aggiunge solo le righe mancanti `.scalable_api_key` e
+     `api_key.txt`, senza mai sovrascrivere regole esistenti, senza pattern allargati).
+
+   Ordine di lettura di `api_client.py`: `SCALABLE_API_KEY` → `~/.scalable_api_key` →
+   `.scalable_api_key` nel workspace corrente. Se la home non persiste ma la copia nel workspace
+   esiste, l'API la legge comunque dal workspace: nessuna azione manuale a inizio sessione.
+3. **Verifica subito** con una chiamata reale (es. `bench --sub payments`): se `available: true`
+   conferma "chiave salvata e verificata ✓" (senza mostrarla, nemmeno in parte); altrimenti
+   riporta `reason` all'utente.
+4. **Riservatezza**: non mostrare mai la chiave — né in chat, né nei file di output, nei report,
+   nei log, negli URL o negli eventi analytics. Nei test usa solo valori fittizi (es. `test_key_not_real`).
 
 ## Come si consulta
 
