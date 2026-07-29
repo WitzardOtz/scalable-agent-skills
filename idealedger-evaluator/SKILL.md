@@ -164,6 +164,8 @@ idealedger-evaluator-workspace/
 `00_startup_brief.md` is the spine: startup, settore, fase apparente, capability, use case,
 materiale, rischio principale, evidence quality, output richiesto, prossima azione.
 
+> **Chiave Scalable Intelligence (add-on).** Se l'utente attiva la chiave e la home non persiste (es. sandbox), salvala nel workspace come `.scalable_api_key` con `save-key --scope workspace` (permessi 600 dove supportati): il `.gitignore` del workspace la esclude in automatico e non va mai mostrata. Procedura in `references/scalable_intelligence.md`.
+
 ## Output formats
 
 Exact templates in **`references/formats.md`** — read it before producing any deliverable:
