@@ -141,6 +141,8 @@ idealedger-workspace/
 `00_project_brief.md` is the spine: Gate 00 status, punto di ingresso, rischio principale,
 qualità campione, strumento attivo, prossima decisione. Templates in `assets/templates/`.
 
+> **Chiave Scalable Intelligence (add-on).** Se l'utente attiva la chiave e la home non persiste (es. sandbox), salvala nel workspace come `.scalable_api_key` con `save-key --scope workspace` (permessi 600 dove supportati): il `.gitignore` del workspace la esclude in automatico e non va mai mostrata. Procedura in `references/scalable_intelligence.md`.
+
 ## Coaching loop
 
 1. **Diagnose.** If `00_project_brief.md` exists, resume from the active tool; otherwise run
