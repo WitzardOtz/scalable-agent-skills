@@ -58,6 +58,10 @@ pubbliche (protocollo in `references/web_research.md`): solo info pubbliche, mai
 materiale riservato ai motori; ogni dato trovato = `DA_VERIFICARE` con URL, mai `FATTO`; la
 ricerca non scavalca l'intake.
 
+**Leggi sempre la bacheca Q&A pubblica.** Nelle campagne (crowdfunding e simili) l'informazione decisiva spesso emerge solo dalle domande di altri investitori, non dalle voci in
+evidenza: leggila per intero, riconciliala col resto e segnala (`QA_MATERIAL_DISCLOSURE`) i dati
+materiali che compaiono solo li'. Dettagli in `references/special_rules.md`.
+
 **Language & tone.** Reason in English-flavored evaluator style; **speak to the evaluator
 in the evaluator's language** (default: Italian if unclear). References and templates are
 in Italian: translate on the fly when needed. Keep English verdict formulas and sticker
@@ -124,7 +128,7 @@ declared low-confidence read; don't over-run tools for a simple "vale una call?"
 **Read `references/special_rules.md` before producing any deliverable.** It covers: fase
 dichiarata vs fase da evidenze · metrics present ≠ metrics weak (mismatch, decelerazione
 YoY, replicabilità) · document inconsistency protocol · Evidence Update / Delta Memo ·
-valuation/comparables review · crowdfunding caveat · objective framing · the pre-delivery
+valuation/comparables review · crowdfunding caveat · **bacheca Q&A pubblica** · **disclosure forensics** (adjusted vs statutario, natura reale dei deal, contatore gonfiato da SAFE) · objective framing · the pre-delivery
 quality checklist.
 
 **Risk archetypes** (full playbooks in `references/archetypes.md`, read the relevant one):
