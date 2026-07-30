@@ -57,6 +57,29 @@ né narrativa di campagna con trazione commerciale. Output: **Crowdfunding Mater
 Caveat** + **Missing Legal/Financial Documents** + **Governance Questions**
 (`GOVERNANCE_CLARIFICATION_NEEDED` quando rilevante).
 
+## Bacheca Q&A pubblica (leggila SEMPRE)
+Se la campagna ha una bacheca domande/risposte pubblica, **leggila per intero prima del memo**:
+spesso l'informazione decisiva emerge solo perche' un altro investitore l'ha chiesta, non dalle
+voci in evidenza. Riconcilia ogni risposta col resto del materiale. Quando un dato materiale (un
+numero reale, la natura di un contratto, un rischio) compare **solo** nella Q&A e non nei documenti
+ufficiali, dichiaralo e taggalo `QA_MATERIAL_DISCLOSURE`: e' sia un dato sia un segnale sulla
+trasparenza spontanea. Cita la domanda. Osserva anche il *comportamento di risposta*: rispondere
+nel merito con numeri e' positivo; reindirizzare a una call senza dare cifre e' `DILIGENCE_DEFERRED`.
+
+## Disclosure forensics — numeri "adjusted", natura dei deal, contatore raccolta
+Tre controlli obbligatori, perche' e' dove le "highlight" divergono dai fatti:
+- **Adjusted vs statutario.** Se una cifra in evidenza e' "adjusted"/gestionale (es. "EBITDA 860k€,
+  37%"), cerca il valore **statutario/contabile** (es. ~420k€, ~18%) in bilanci/KIIS e **riporta
+  entrambi**; il gap va nelle domande di diligence. Tag `ADJUSTED_VS_STATUTORY_GAP`.
+- **Natura reale dei deal vantati.** Verifica la sostanza legale di M&A / "acquisizioni" /
+  partnership / contratti: un'"acquisizione" puo' essere un affitto di ramo da liquidazione
+  giudiziale (con scadenza, senza opzione di riscatto), una "partnership" una LOI non vincolante.
+  Riporta la forma giuridica reale, non l'etichetta di marketing. Tag `DEAL_NATURE_MISREPRESENTED`
+  (+ `DOCUMENT_INCONSISTENCY` se contraddice altro materiale).
+- **Contatore raccolta.** Separa la **raccolta crowdfunding reale** da SAFE/round pre-esistenti
+  conteggiati nella barra (es. contatore al 96% che include 505k€ di SAFE → raccolta reale ~23k€).
+  Tag `RAISE_COUNTER_INFLATED`.
+
 ## Objective framing
 L'obiettivo è *supportare un assessment preliminare pre-investimento* — rischi, evidenze
 mancanti, domande di diligence — mai decidere se investire. Non dire investi / non
@@ -73,5 +96,5 @@ rivisto metodologia comparabili/valuation se presente · verificato se la valuat
 presuppone rischio già rimosso che le evidenze non supportano (`VALUATION_BELIEF_GAP`) ·
 verificato se il GTM è un sistema ripetibile o founder-heroics (`GTM_FOUNDER_DEPENDENT`) ·
 verificato se il positioning è leggibile in una frase (`POSITIONING_NON_LEGGIBILE`) ·
-evitato investment advice · prodotto domande di diligence concrete · esplicitato "what
+letto la **bacheca Q&A** pubblica e segnalato i dati emersi solo da li' · riconciliato cifre **adjusted vs statutarie** · verificato la **natura legale reale** dei deal vantati · separato la **raccolta reale** da SAFE/round nel contatore · evitato investment advice · prodotto domande di diligence concrete · esplicitato "what
 would change my mind".

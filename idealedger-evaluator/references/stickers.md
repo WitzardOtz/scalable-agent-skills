@@ -32,6 +32,7 @@ LOCAL_TRUST_BOTTLENECK
 **Governance/valuation:** GOVERNANCE_CLARIFICATION_NEEDED · VALUATION_METHOD_RISK ·
 COMPARABLES_SCALE_MISMATCH
 **Team/fase:** TEAM_STAGE_MISMATCH · TEAM_COMMITMENT_UNCLEAR
+**Disclosure forensics (campagne):** QA_MATERIAL_DISCLOSURE · DILIGENCE_DEFERRED · ADJUSTED_VS_STATUTORY_GAP · DEAL_NATURE_MISREPRESENTED · RAISE_COUNTER_INFLATED
 **Valuation-belief / GTM / posizionamento (lente VC):** VALUATION_BELIEF_GAP ·
 GTM_FOUNDER_DEPENDENT · POSITIONING_NON_LEGGIBILE
 
@@ -42,6 +43,18 @@ GTM_FOUNDER_DEPENDENT · POSITIONING_NON_LEGGIBILE
   (delivery vs acquisizione). Dettaglio in `vc_lens.md` §4b.
 - `POSITIONING_NON_LEGGIBILE` — la startup non è spiegabile in una frase al buyer giusto:
   difficile da capire, comprare e finanziare. Spesso sintomo di USE_CASE_DEBOLE/TARGET_CONFUSO.
+
+- `QA_MATERIAL_DISCLOSURE` — un dato materiale (numero reale, natura di un contratto, rischio)
+  emerge SOLO dalla bacheca Q&A pubblica, non dalle voci in evidenza. Sia dato sia segnale di
+  trasparenza. Cita la domanda.
+- `DILIGENCE_DEFERRED` — a domande dirette su numeri chiave (CAC/LTV, quota di raccolta al debito)
+  la risposta e' "ne parliamo in call" senza cifre. Reindirizzamento = segnale.
+- `ADJUSTED_VS_STATUTORY_GAP` — cifra in evidenza "adjusted"/gestionale materialmente sopra lo
+  statutario/contabile (es. EBITDA 37% adjusted vs ~18% contabile). Riporta entrambi.
+- `DEAL_NATURE_MISREPRESENTED` — M&A/partnership/contratto vantato ha forma giuridica reale piu'
+  debole (es. affitto di ramo da liquidazione con scadenza e senza riscatto; LOI non vincolante).
+- `RAISE_COUNTER_INFLATED` — il contatore di raccolta include SAFE/round pre-esistenti; la raccolta
+  crowdfunding reale e' molto piu' bassa.
 
 ## Regola metriche (non usare METRICHE_DEBOLI a caso)
 - Metriche **assenti** → METRICHE_DEBOLI / MATERIALE_INSUFFICIENTE
