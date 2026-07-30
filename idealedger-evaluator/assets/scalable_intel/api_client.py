@@ -99,7 +99,11 @@ def _call(endpoint, params):
         return {"available": False, "reason": "nessuna API key (add-on Scalable non attivo) — procedi con contenuto generico"}
     qs = urllib.parse.urlencode({k: v for k, v in params.items() if v not in (None, "")})
     full = f"{url.rstrip('/')}/v1/{endpoint}?{qs}"
-    req = urllib.request.Request(full, headers={"Authorization": f"Bearer {key}"})
+    # User-Agent obbligatorio: senza UA Cloudflare blocca urllib con HTTP 403 (error 1010).
+    req = urllib.request.Request(full, headers={
+        "Authorization": f"Bearer {key}",
+        "User-Agent": "ScalableIntel/1.0",
+    })
     try:
         with urllib.request.urlopen(req, timeout=15) as r:
             data = json.loads(r.read().decode("utf-8"))
